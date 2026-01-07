@@ -24,6 +24,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,33 +64,34 @@
                 ">
                         <ul class="navbar-nav mx-auto mt-2 mt-lg-0 d-flex flex-wrap text-center">
                             <li class="nav-item">
-                                <a class="nav-link swim-nav-hover" href="index.html" aria-current="page">Home
+                                <a class="text-white nav-link text-white" href="index.html" aria-current="page">Home
                                     <span class="visually-hidden">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link swim-nav-hover" href="#">Games</a>
+                                <a class="text-white nav-link nav-hover" href="#">Games</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link swim-nav-hover" href="eatry.html">Menu</a>
+                                <a class="text-white nav-link nav-hover" href="eatry.html">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link swim-nav-hover" href="#">Entertainment</a>
+                                <a class="text-white nav-link nav-hover" href="#">Entertainment</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="swim-nav-hover nav-link dropdown-toggle" href="#" id="dropdownId"
+                                <a class="text-white nav-link dropdown-toggle" href="#" id="dropdownId"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</a>
-                                <div style="background-color: #22c3b6a9;" class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item text-center swim-hover text-dark" href="#">Gym</a>
+                                <div style="background-color: #c68039;" class="dropdown-menu"
+                                    aria-labelledby="dropdownId">
+                                    <a class="dropdown-item text-center text-dark" href="#">Gym</a>
                                     <hr>
-                                    <a class="dropdown-item text-center swim-hover text-dark" href="VIP_Lounge.html">VIP
+                                    <a class="dropdown-item text-center text-dark" href="VIP_Lounge.html">VIP
                                         Loudge</a>
                                     <hr>
-                                    <a class="dropdown-item text-center swim-hover text-dark" href="saloon.html">Saloon</a>
+                                    <a class="dropdown-item text-center text-dark" href="saloon.html">Saloon</a>
                                     <hr>
-                                    <a class="dropdown-item text-center swim-hover active_swim" href="swimming-pool.html">Pool
+                                    <a class="dropdown-item text-center  text-dark" href="swimming-pool.html">Pool
                                         Bar</a>
                                     <hr>
-                                    <a class="dropdown-item text-center swim-hover text-dark" href="planning.html">Catering
+                                    <a class="dropdown-item text-center text-white" href="planning.html">Catering
                                         and event planning</a>
                                     <hr>
                                 </div>
@@ -80,7 +101,7 @@
                     </ul>
                     <div class="text-center text-sm-center">
                         <a href="contact.html">
-                            <div type="button" class="button_swim scale btn btn mt-3 text-white"
+                            <div type="button" class="button_plan scale btn btn mt-3 text-white"
                                 style=" border: solid 1px; border-radius: 100vmax;">
                                 contact us
                             </div>
@@ -94,23 +115,24 @@
     </section>
     <!-- navbar end -->
 
+
     <!-- hero start -->
-    <section class="swim_hero">
-        <div class="color-swim">
-            <div class="container text-center pad">
-                <div class="h4 fs-6 text-uppercase size-swim1 blur">
-                    Premium Leisure Experience
+    <section class="plan_hero">
+        <div class="color-plan">
+            <div class="container-fluid pad">
+                <div class="h4 fs-6 text-uppercase size-plan1">
+                    <i class="fa-regular fa-star" style="color: var(--brown);"></i> Premium Outdoor Catering & Events
                 </div><br />
-                <div class="text-capitalize text-white size-swim2">
-                    Dive Into Relaxation <span style="color: var(--cyan);">at Sekani</span>
+                <div class="text-capitalize text-white size-plan2">
+                    Exceptional Outdoor Catering & <span style="color: var(--brown);">Unforgettable </span>Events
                 </div><br />
-                <div class="p text-white size-swim3">
-                    Experience the perfect blend of relaxation and fun at our premium swimming facility. Crystal-clear
-                    waters, world-class amenities, and unforgettable moments await you.
+                <div class="p text-white size-plan3">
+                    We transform your outdoor celebrations into extraordinary experiences with exquisite cuisine,
+                    stunning décor, and flawless event coordination.
                 </div><br>
-                <a href="#swim" class="text-decoration-none">
-                    <div class="h4 fs-6 text-capitalize size-swim1 blur">
-                        view facilities
+                <a href="#plan" class="text-decoration-none">
+                    <div class="h4 fs-6 text-capitalize size-plan1 scale blur">
+                        view package
                     </div>
                 </a>
 
@@ -120,132 +142,100 @@
     <!-- hero end -->
 
     <!-- about us start -->
-    <!-- the Experience start -->
-    <section style="padding-top: 100dvh;" class="container-fluid">
-        <div class="py-5">
-            <div class="text-capitalize swim-button2">
-                about us
-            </div>
-            <div class="text-capitalize fs-1 size-swim2" style="color: #0a4976;">
-                Where Relaxation Meets
-            </div>
-            <div class="p text-dark fs-5 size-swim3">
-                Sekani Swimming Pool is more than just a pool—it's a sanctuary designed for those who seek tranquility,
-                fitness, and unforgettable moments. Our state-of-the-art facility combines luxury with comfort, offering
-                a refreshing escape from the everyday. <br> <br>
+    <section class="container-fluid" style="padding-top: 100dvh; ">
+        <div class="row g-2 my-5">
+            <div class="col-12 col-lg-6">
+                <div class="text-capitalize plan-button4">
+                    about us
+                </div>
+                <div class="text-capitalize fs-1 size-swim2" style="color: black;">
+                    Creating Memorable Moments Under the Open Sky
+                </div>
+                <div class="p text-black fs-5 size-plan3">
+                    Sekani was born from a simple belief: that the best celebrations happen outdoors, surrounded by
+                    nature, great food, and the people you love. Since our founding, we've been dedicated to crafting
+                    extraordinary outdoor experiences across Nigeria. <br><br>
 
-                With professional lifeguards on duty, strict hygiene standards, and world-class amenities, we ensure
-                every visit is safe, enjoyable, and memorable. Whether you're here for a morning swim, a family day out,
-                or a vibrant pool party, Sekani delivers excellence.
+                    From intimate garden parties to grand corporate galas, our team brings creativity, precision, and
+                    warmth to every event. We handle everything—from gourmet catering and elegant décor to seamless
+                    coordination—so you can focus on enjoying your special moments.
+                </div>
+                <div class="row g-2 py-3">
+                    <div class="col-6 scale p-2"
+                        style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 1rem;">
+                        <div class="row g-2">
+                            <div class="col-3">
+                                <i class="fa-regular fa-heart size-plan5 fs-5"></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="fw-bold">Passion for Excellence</p>
+                                <p>Every dish we prepare and every event we plan is infused with our passion for
+                                    creating unforgettable moments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 scale p-2"
+                        style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 1rem;">
+                        <div class="row g-2">
+                            <div class="col-3">
+                                <i class="fa-solid fa-award size-plan5 fs-5"></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="fw-bold">Premium Quality</p>
+                                <p>We use only the finest ingredients and materials to ensure every detail meets our
+                                    exacting standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 scale p-2"
+                        style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 1rem;">
+                        <div class="row g-2">
+                            <div class="col-3">
+                                <i class="fa-solid fa-users size-plan5 fs-5"></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="fw-bold">Expert Team</p>
+                                <p>Our experienced chefs, planners, and coordinators work seamlessly to bring your
+                                    vision to life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 scale p-2"
+                        style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 1rem;">
+                        <div class="row g-2">
+                            <div class="col-3">
+                                <i class="fa-regular fa-clock size-plan5 fs-5"></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="fw-bold">Timely Delivery</p>
+                                <p>Punctuality is our promise. We ensure every element is perfectly timed for your
+                                    event.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="row py-4">
-                <div class="col-4">
-                    <div class="text-center py-4" style="background-color: #def5f7; border-radius: 1rem;">
-                        <div style="color: #0a4976;" class="fs-2">5000+</div>
-                        <small class="text-capitalize">happpy quest</small>
+            <div class="col-12 col-lg-6">
+                <div class="row g-2">
+                    <div class="col-6">
+                        <img src="assets/images/plan1" style="width: 100%;">
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/plan2" style="width: 100%;">
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/plan3" style="width: 100%;">
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/plan4" style="width: 100%;">
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="text-center py-4" style="background-color: #def5f7; border-radius: 1rem;">
-                        <div style="color: #0a4976;" class="fs-2">365</div>
-                        <small class="text-capitalize">days open</small>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="text-center py-4" style="background-color: #def5f7; border-radius: 1rem;">
-                        <div style="color: #0a4976;" class="fs-2">100%</div>
-                        <small class="text-capitalize">safe & clean</small>
-                    </div>
-                </div>
 
             </div>
-        </div>
-
         </div>
     </section>
     <!-- about us end -->
-
-    <!-- Facilities start -->
-    <section id="swim">
-        <div class="container-fluid pb-5">
-            <div class="row g-4">
-                <div class="col-12 col-lg-3">
-                    <div class="card container swim_hover" style="border-radius: 1rem; border: solid 2px">
-                        <div class="row">
-                            <div class="col-2 pt-4 ps-4">
-                                <i class="fa-solid fa-droplet swim_moji scale pt-4"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="h4 text-capitalize pt-4" style="font-family: serif">
-                                Crystal clear water
-                            </div>
-                            <div class="p pt2" style="font-family: Montserrat">
-                                Our pool water is treated with advanced filtration system ensuring pristine clarity and
-                                safety.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <div class="card container swim_hover" style="border-radius: 1rem; border: solid 2px">
-                        <div class="row">
-                            <div class="col-2 pt-4 ps-4">
-                                <i class="fa-solid fa-shield swim_moji scale pt-4"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="h4 text-capitalize pt-4" style="font-family: serif">
-                                safe & hygienic
-                            </div>
-                            <div class="p pt2" style="font-family: Montserrat">
-                                Professional maintenance and regular safety checks guarantee a worry-free swimming
-                                experience
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <div class="card container swim_hover" style="border-radius: 1rem; border: solid 2px">
-                        <div class="row">
-                            <div class="col-2 pt-4 ps-4">
-                                <i class="fa-solid fa-users swim_moji scale pt-4"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="h4 text-capitalize pt-4" style="font-family: serif">
-                                family friendly
-                            </div>
-                            <div class="p pt2" style="font-family: Montserrat">
-                                Dedication zones for children and families creates the perfect environment for quality
-                                time together
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <div class="card container swim_hover" style="border-radius: 1rem; border: solid 2px">
-                        <div class="row">
-                            <div class="col-2 pt-4 ps-4">
-                                <i class="fa-solid fa-sun swim_moji scale pt-4"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="h4 text-capitalize pt-4" style="font-family: serif">
-                                All-Day comfort
-                            </div>
-                            <div class="p pt2" style="font-family: Montserrat">
-                                Enjoy poolside loungers, shaded cabanas, and comfortable amenities from sunrise to
-                                sunset.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- Facilities end -->
 
     <!-- price start -->
     <section class="container-fluid">
@@ -446,7 +436,70 @@
     </section>
     <!-- footer ends -->
 
+
+
+
+    <h2>Contact Form</h2>
+    <form id="whatsappForm">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Your Email">
+
+        <label>Subject:</label>
+        <input type="text" id="subject" placeholder="Subject">
+
+        <label>Message:</label>
+        <textarea id="message" rows="4" placeholder="Message"></textarea>
+
+        <button type="button" onclick="sendToWhatsapp()">Send to WhatsApp</button>
+    </form>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function sendToWhatsapp() {
+            try {
+                // --- DATA GATHERING SECTION ---
+                // We use a helper function to safely get values even if you deleted a box
+                var name = getValue('name');
+                var email = getValue('email');
+                var subject = getValue('subject');
+                var message = getValue('message');
+
+                // --- CHECK IF EMPTY ---
+                if (name === "" || message === "") {
+                    alert("Please fill in at least your Name and Message.");
+                    return;
+                }
+
+                // --- SENDING SECTION ---
+                var phoneNumber = "2349065404205";
+
+                var url = "https://wa.me/" + phoneNumber + "?text="
+                    + "*Name:* " + encodeURIComponent(name) + "%0a"
+                    + "*Email:* " + encodeURIComponent(email) + "%0a"
+                    + "*Subject:* " + encodeURIComponent(subject) + "%0a"
+                    + "*Message:* " + encodeURIComponent(message);
+
+                window.open(url, '_blank').focus();
+
+            } catch (error) {
+                alert("Error: " + error.message);
+            }
+        }
+
+        // Helper function to prevent crashes if an ID is missing
+        function getValue(id) {
+            var element = document.getElementById(id);
+            if (element) {
+                return element.value;
+            } else {
+                console.log("Warning: Could not find element with ID: " + id);
+                return "N/A"; // Returns N/A if the box is missing
+            }
+        }
+    </script>
 </body>
 
 </html>

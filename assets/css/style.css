@@ -1,5 +1,6 @@
 :root {
-    --primary: red;
+    --primary: #ddab2c;
+    --secondary: #1f1f1f4c;
     --white: #ffffff;
     --dark: #212529;
     --gold: #D9A520;
@@ -10,6 +11,8 @@
     --green: green;
     --red: red;
     --cyan: #22c3b6;
+    --darkblue: #0a4976 ;
+    --brown: #c68039;
     /* --background: 0 0% 4%; */
 }
 
@@ -66,6 +69,9 @@ html {
     background: transparent;
     backdrop-filter: blur(20px);
 }
+body {
+    /* overflow-x: hidden; */
+}
 
 
 
@@ -75,43 +81,90 @@ html {
 /* INDEX CSS */
 .button:hover {
     background-color: var(--primary);
-    animation: button 1s linear normal both;
+    animation: button 0.3s linear normal both;
 
 }
 
 .button:hover {
     color: var(--white);
     border-color: var(--primary);
-    background-color: var(--primary);
+    background-color: #ddab2c;
     transition-duration: 0.3s;
     transition-timing-function: linear;
     
-    box-shadow: 0 0 10px white, 0 0 20px var(--red)
+    box-shadow: 0 0 10px white, 0 0 20px white
 }
-
-body {
-    overflow-x: hidden;
+.button-index-service {
+    color: #ddab2c;
+    background-color: #00000000;
+    backdrop-filter: blur(100px);
+    border: solid 1px;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-
-.hero {
-    background-image: url(/assets/images/hero.jpg);
-    /* opacity: 1; */
-    background-image: linear-gradient(black, red);
-    background-image: linear-gradient(black, red);
+.button-index-service:hover {
+    color: #ddab2ca8;
+    background-color: #00000000;
+    backdrop-filter: blur(100px);
+    border: solid 1px;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0 0 5px white, 0 0 10px white
+}
+.index-hero{
+    background-image: url(/assets/images/sekani-hero);
+    background-size: cover;
+    /* background-color: #00000094; */
     height: 100dvh;
-    /* width: 100dvw; */
+    width: 100%;
+    display: flex;
+    position: absolute;  
+    /* margin-bottom: 100dvh; */
+}
+.color-index{
+    position: relative;
+    background-color: #00000094;
+    height: 100dvh;
+    width: 100%;
+
+}
+.hero {
+    margin-top: 5rem;
+    height: 100dvh;
+    width: 100%;
     background-size: cover;
     padding-top: 6rem;
     font-size: 5rem;
 }
-
 @media screen and (max-width: 576px) {
     .hero {
         padding-top: 6rem;
         font-size: 2rem;
     }
 }
-
+.active-index{
+    color: #ddab2c;
+}
+.active-index:hover{
+    color: #ddab2cc0;
+}
+.index-hover{
+    color: white;
+}
+.index-hover:hover{
+    color: #ffffffc0;
+}
+.index_services{
+    color: #ddab2c;
+    border: #ddab2c solid 2px;
+}
+.index_service:hover{
+    color: black;
+    background-color: #ddab2c;
+    border: black solid 2px;
+}
 /* @media screen and (max-width: 992px) {
     .hero{
     padding-top: 6rem;
@@ -119,9 +172,11 @@ body {
     }
 } */
 .hero>.container>span {
-    color: red;
+    color: #ddab2c;
 }
-
+.hero-color{
+    color: #ddab2c;
+}
 .hero>a>button {
     background-color: black;
     border: solid white 3px;
@@ -137,14 +192,14 @@ body {
 
 .hero_emoji {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
 }
 
 .empire {
     color: black;
     border: solid;
     padding: 1rem;
-    background-color: red;
+    background-color: #ddab2c;
     border-radius: 10px;
     font-size: 1.5rem;
 }
@@ -166,27 +221,35 @@ body {
 }
 
 .open>div:nth-child(1) {
-    background-color: red;
+    background-color: #1f1f1f4c;
     border-radius: 15px;
-    box-shadow: rgb(10, 10, 10) -5px -5px 100px -0px inset;
+    /* box-shadow: #ddab2c36 -5px -5px 100px -0px inset; */
+    color: var(--primary);
+    border: solid 2px #ddab2c;
 }
 
 .open>div:nth-child(2) {
-    background-color: orangered;
+    background-color: #1f1f1f4c;
     border-radius: 15px;
-    box-shadow: rgb(10, 10, 10) -5px -5px 80px -0px inset
+    /* box-shadow: #ddab2c36 -5px -5px 80px -0px inset; */
+    color: var(--primary);
+    border: solid 2px #ddab2c;
 }
 
 .open>div:nth-child(3) {
-    background-color: blue;
+    background-color: #1f1f1f4c;
     border-radius: 15px;
-    box-shadow: rgb(10, 10, 10) -5px -5px 100px -0px inset
+    /* box-shadow: #ddab2c36 -5px -5px 100px -0px inset; */
+    color: var(--primary);
+    border: solid 2px #ddab2c;
 }
 
 .open>div:nth-child(4) {
-    background-color: green;
+    background-color: #1f1f1f4c;
     border-radius: 15px;
-    box-shadow: rgb(10, 10, 10) -5px -5px 100px -0px inset
+    /* box-shadow: #ddab2c36 -5px -5px 100px -0px inset; */
+    color: var(--primary);
+    border: solid 2px #ddab2c;
 }
 
 .moji {
@@ -222,7 +285,40 @@ body {
 .touch:hover {
     border-bottom: 1px solid;
 }
-
+.index-moji-hover{
+    color: var(--primary); 
+    border-radius: 0.5rem; 
+    background-color: #ddab2c1a; 
+    padding: 1rem;
+}
+.index-text-hover{
+    color: white;
+    font-size: 18px; 
+    font-family: Playfair Display, serif;
+}
+.index-services-hover{
+    background-color: #1f1f1f4c; 
+    border-radius: 1rem; 
+    border: #ddab2c1a 2px solid;
+}
+.index-services-hover:hover{
+    box-shadow: #ddab2c36 -5px -5px 30px -0px inset,0 0 20px #ddab2c36;
+    background-image: url(/assets/images/hero.jpg);
+    background-size: cover;
+    /* opacity: 0.5; */
+    .index-moji-hover{
+        animation: scale 0.5s ease normal both;
+        background-color: #1f1f1f4c; 
+        color: black;
+    }
+    .index-text-hover{
+        color: #ddab2c;
+    }
+}
+@keyframes scale {
+    from{transform: scale(1);}
+    to{transform: scale(1.5);}
+}
 .serice_sticker {
     padding-bottom: 5rem;
     padding-top: 5.1rem;
@@ -246,6 +342,11 @@ body {
         transition-timing-function: linear;
     }
 }
+
+
+
+
+
 
 
 
@@ -306,6 +407,18 @@ body {
 
 
 /* SALOON CSS */
+.active_saloon{
+    color: black;
+}
+/* .saloon-nav-hover{
+    color: var(--white);
+} */
+.saloon-nav-hover:hover{
+    color: var(--gold);
+}
+.saloon-hover:hover{
+    background-color: rgba(255, 255, 255, 0.548);
+}
 .saloon_hero {
     background-image: url(/assets/images/sekani_saloon);
     background-size: cover;
@@ -423,6 +536,15 @@ body {
 
 
 /* VIP-LOUNDGE */
+.active_vip{
+    color: white;
+}
+.vip-nav-hover{
+    color: var(--white);
+}
+.vip-nav-hover:hover{
+    color: var(--gold);
+}
  .loundge_hero{
     background-image: url(/assets/images/vip2);
     width: 100%;
@@ -492,10 +614,22 @@ body {
 
 
 /* swimmig pool */
+.active_swim{
+    color: white;
+}
+.swim-nav-hover{
+    color: var(--white);
+}
+.swim-nav-hover:hover{
+    color: #0a4976;
+}
+.swim-hover:hover{
+    background-color: rgba(255, 255, 255, 0.548);
+}
 .swim_hero{
-    background-image: url(/assets/images/hero-pool);
+    background-image: url(/assets/images/pool);
+    height: 125dvh;
     width: 100%;
-    height: 100dvh;
     background-size: cover;
     display: flex;
     position: absolute;
@@ -541,11 +675,145 @@ body {
     font-size: 18px; 
  }
 }
-.swim-button{
+.swim-button2{
     color: #0a4976;
     background-color: #def5f7;
     border-radius: 3rem;
     padding: 0.5rem;
     display: inline-block;
     
+}
+.button_swim:hover{
+    box-shadow: 0 0 10px white, 0 0 20px var(--darkblue);
+    background-color: var(--darkblue);
+}
+.darkblue{
+    color: #0a4976;
+}
+.swim_moji{
+    padding: 1.5rem; 
+    font-size: 1.5rem; 
+    background-color: #22c3b670;
+    border-radius: 1rem;
+    color: var(--darkblue);
+}
+.swim_hover:hover{
+    .swim_moji{
+        color: white;
+        background-color: var(--darkblue);
+        transform: translateY(10px);
+        box-shadow: 0 0 10px gray, 0 0 20px gray;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        /* animation: hover 0.3s linear 0s inherit normal fill-mode; */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* planning start */
+.plan_hero{
+    background-image: url(/assets/images/plan1);
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+ }
+ .color-plan{
+    position: relative;
+    background-color: #80808062;
+    height: 100dvh;
+    width: 100%;
+ }
+ .size-plan1{
+    font-family: Montserrat;
+    color: white;
+    border: solid 1px #c68039;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 3rem;
+    background-color: #c6803933;
+ }
+ .size-plan5{
+    font-family: Montserrat;
+    color: var(--brown);
+    border: solid 1px #c68039;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #c6803933;
+ }
+ .size-plan2{
+    font-family: playfair Display; 
+    font-size: 5rem;
+ }
+ .size-plan3{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    color: #faf8f5cc; 
+ }
+ @media screen and (max-width: 576px) {
+    .size-plan1{
+    font-family: Montserrat;
+    color: white;
+    border: solid 1px white;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 3rem;
+ }
+ .size-plan2{
+    font-family: playfair Display; 
+    font-size: 2rem;
+ }
+ .size-plan3{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px; 
+ }
+}
+.plan-button2{
+    color: var(--brown);
+    background-color: #def5f7;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    display: inline-block;
+    
+}
+.plan-button4{
+    color: var(--brown);
+    border-radius: 3rem;
+    padding: 0.5rem;
+    display: inline-block;
+    
+}
+.button_plan:hover{
+    box-shadow: 0 0 10px white, 0 0 20px var(--brown);
+    background-color: var(--brown);
+}
+.darkblue{
+    color: #0a4976;
+}
+.swim_moji{
+    padding: 1.5rem; 
+    font-size: 1.5rem; 
+    background-color: #22c3b670;
+    border-radius: 1rem;
+    color: var(--darkblue);
+}
+.swim_hover:hover{
+    .swim_moji{
+        color: white;
+        background-color: var(--darkblue);
+        transform: translateY(10px);
+        box-shadow: 0 0 10px gray, 0 0 20px gray;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        /* animation: hover 0.3s linear 0s inherit normal fill-mode; */
+    }
 }
